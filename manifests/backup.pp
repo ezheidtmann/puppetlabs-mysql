@@ -75,7 +75,7 @@ class mysql::backup (
   file { 'mysqlbackupdir':
     ensure => 'directory',
     path   => $backupdir,
-    mode   => '0700',
+    mode   => '0750',
     owner  => 'root',
     group  => 'root',
   }
